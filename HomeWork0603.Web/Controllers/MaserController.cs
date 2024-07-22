@@ -106,18 +106,5 @@ namespace HomeWork0603.Web.Controllers
             var repo = new MaserRepository(_connectionString);
             repo.UpdateSource(vm.EditingSource, vm.SelectedSource);
         }
-
-        //[HttpPost("SetNote")]
-        //public void SetNote(UpdateNoteViewModel viewModel)
-        //{
-        //    var user = GetCurrentUser();
-        //    var bookRepo = new FavoriteBooksRepository(_connectionString);
-        //    if (!bookRepo.DoesBookBelongToUser(user.Id, viewModel.FavoriteBookId))
-        //    {
-        //        return;
-        //    }
-
-        //    bookRepo.SetNote(viewModel.FavoriteBookId, viewModel.Note);
-        //}
     }
 }
